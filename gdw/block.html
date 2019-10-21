@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Block-level Elements</title>
+<style>
+body {
+        margin: 40px;
+        padding: 40px;
+        background-color: #BE5;
+	border: 2px dashed #573;
+      }  
+h1.lol, footer{
+	text-align: center;
+}
+p, pre{
+	margin-left: 15px;
+}
+.first{
+	background-color: #FF9;
+	border: 2px dotted #880;
+}
+.second{
+	background-color: #CF9;
+	border: 2px dotted #880;
+}
+#first{
+	color: #373;
+}	      
+#second{
+	color: #040;
+}
+a:link, a:visited {
+        font-weight: bold;
+        color: #000;
+        text-decoration: none;
+}
+a:hover, a:active {
+        color: #FF0;
+}
+a:active{
+	font-size: xx-large;
+}
+      
+</style>
+</head>
+<body>
+<h1 class="lol">Block-level Elements</h1>
+<h2 id="first">Text in Preformatted Element</h2>
+<pre class="first">This             text
+
+        spans              several
+   lines
+
+                     and             has             lots
+  of         extra              
+
+whitespace. </pre>
+<p>It Keeps The Spaces Between The words</p>
+<h1 id="second">Same Text in a Paragraph Element</h1>
+
+<p>
+This             text
+
+        spans              several
+   lines
+
+                     and             has             lots
+  of         extra              
+
+whitespace.
+</p>
+<p>It Doesn't Keep The White spaces.</p>
+
+<div>
+<p class="second">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content (also called greeking). Replacing the actual content with placeholder text allows designers to design the form of the content before the content itself has been produced.
+
+The lorem ipsum text is typically a scrambled section of De finibus bonorum et malorum, a 1st-century BC Latin text by Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.
+</p>
+
+
+<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content (also called greeking). Replacing the actual content with placeholder text allows designers to design the form of the content before the content itself has been produced.
+
+The lorem ipsum text is typically a scrambled section of De finibus bonorum et malorum, a 1st-century BC Latin text by Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.
+</p>
+</div>
+
+
+
+<footer style="text-align: center;">
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a>  
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

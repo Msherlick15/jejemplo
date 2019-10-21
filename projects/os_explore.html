@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Operating System Exploration</title>
+<style>
+@import url(../mystyle.css);
+main {
+    padding-top: 0;
+}
+header {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: auto;
+    padding-bottom: 1vw;
+}
+header > h1 {
+    font-size: 3vw;
+    padding-right: 20vw; 
+}
+main > h2 {
+    text-align: center;
+    font-size: 2vw;
+}
+div.examples {
+    display: grid;
+    grid-template-columns: 30vw 20vw;
+    grid-template-rows: auto;
+    margin-left: 18vw;
+}
+div.examples > figure > img {
+    height: 20vw;
+    text-align: center;
+}
+div.examples > figure > figcaption {
+    text-align: center;
+    margin-top: 0.5vw;
+}
+</style>
+</head>
+<body>
+<header>
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Riscos_logo_generic_cogwheel_richard_hallas_lg_cogwheel_x1.svg/150px-Riscos_logo_generic_cogwheel_richard_hallas_lg_cogwheel_x1.svg.png" alt="RISC OS Logo">
+<h1>Operating System Exploration</h1>
+</header>
+
+<main>
+<h2>RISC OS</h2>
+<p>
+According to Wikipedia, RISC OS was first released in 1987 as the original
+operating system for the
+<a href="https://en.wikipedia.org/wiki/ARM_architecture">ARM</a> processor,
+with both the operating system and the processor being the creation of
+<a href="https://en.wikipedia.org/wiki/Acorn_Computers">Acorn Computers</a>.
+</p>
+<div class="examples">
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/AcornArchimedes-Wiki.jpg/450px-AcornArchimedes-Wiki.jpg"
+alt="Archimedes 400/1">
+<figcaption>
+Acorn Archimedes 400/1 Computer 1987
+</figcaption>
+</figure>
+
+<figure><img
+src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Omnibus_RiscPC.jpg"
+alt="RiscPC">
+<figcaption>
+RiscPC late 1990s
+</figcaption>
+</figure>
+</div>
+
+<p>
+ARM processors are now ubiquitous, since they are the chipset running in
+cell phones and other mobile devices.  They are increasingly making their way
+back to the desktop as well, with computers such as the
+<a href="https://en.wikipedia.org/wiki/Raspberry_Pi">Raspberry Pi</a> and the
+<a href="https://en.wikipedia.org/wiki/Pinebook">Pinebook</a>.
+</p>
+
+<h3>Features</h3>
+<ul>
+<li>Since RISC OS was designed for 1987 computers, it is small and resource
+friendly on modern hardward.  It runs fast on a Raspberry Pi 1, and provides
+a GUI which requires a 3-button mouse.</li>
+
+<li>It has a built-in <a href="https://en.wikipedia.org/wiki/BBC_BASIC">BBC
+BASIC</a> interpreter, and BASIC can be used to interact with the operating
+system. BBC BASIC has an
+<a href="https://en.wikipedia.org/wiki/Inline_assembler">inline assembler</a>,
+allowing users to conveniently write ARM
+<a href="https://en.wikipedia.org/wiki/Assembly_language">assembly language</a> 
+programs.</li>
+
+<p>The built-in access to both BASIC and assembly language make RISC OS a good
+tool for learning programming and how computers work.</li>
+</ul>
+
+<h3>Resources</h3>
+<ul>
+<li><a href="https://www.riscosopen.org/content/">RISC OS Open</a></li>
+
+<li><a href="https://en.wikipedia.org/wiki/RISC_OS">RISC OS</a> on Wikipedia
+</li>
+
+<li><a href="https://www.theregister.co.uk/2018/10/23/risc_os_open_source">
+Roughly 30 years after its birth at UK's Acorn Computers, RISC OS 5 is going
+open source</a></li>
+
+<li><a href="https://www.theinquirer.net/inquirer/news/3064969/acorn-computers-risc-os-finally-goes-open-source">
+Acorn Computer's RISC OS finally goes open source</a></li>
+</ul>
+</main>
+
+<footer>
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a> |
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>
