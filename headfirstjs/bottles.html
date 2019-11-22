@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bugs in the code!</title>
+<style>
+@import url(../mystyle.css);
+p#song {
+    font-size: 2em;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Bugs in the code!</h1>
+</header>
+
+<main>
+<p id="song">
+</p>
+</main>
+
+<footer>
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a>  
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+<script>
+var count = 1;
+var lineNum = 0;
+var s = '';
+var word = 'bug';
+var canvas = document.getElementById("song");
+var id = setInterval(nextLine, 2000);
+
+function nextLine() {
+  if (count == 11) {
+    s += "Too many bugs in the code!";
+    canvas.innerHTML = s;
+    clearInterval(id);
+  } else {
+    switch(lineNum) {
+      case 0:
+        s += count + ' little ' + word + ' in the code.<br>';
+        break;
+      case 1:
+        s += count + ' little ' + word + '.<br>';
+        break;
+      case 2:
+        s += 'Take one down and patch it around.<br>';
+        count++;
+        break;
+      case 3:
+        word = 'bugs';
+        s += count + ' little ' + word + ' in the code.<br>';
+        break;
+      case 4:
+        s = '';
+    }
+    lineNum = (lineNum + 1) % 5;
+    canvas.innerHTML = s;
+  }
+}
+</script>
+</body>
+</html>
