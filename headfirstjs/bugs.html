@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Bugs in the code!</title>
+<title>Bugs in my code!</title>
 <style>
 @import url(../mystyle.css);
 p#song {
@@ -12,7 +12,7 @@ p#song {
 </head>
 <body>
 <header>
-<h1>Bugs in the code!</h1>
+<h1>Bugs in my code!</h1>
 </header>
 
 <main>
@@ -37,16 +37,16 @@ var id = setInterval(nextLine, 2000);
 
 function nextLine() {
   if (count == 11) {
-    s += "Too many bugs in the code!";
+    s += "Too many bugs for me :-(";
     canvas.innerHTML = s;
     clearInterval(id);
   } else {
     switch(lineNum) {
       case 0:
-        s += count + ' little ' + word + ' in the code.<br>';
+        s += count + ' little ' + word + ' in my code.<br>';
         break;
       case 1:
-        s += count + ' little ' + word + '.<br>';
+        s += count + ' little ' + word + ' I see.<br>';
         break;
       case 2:
         s += 'Take one down and patch it around.<br>';
@@ -54,12 +54,15 @@ function nextLine() {
         break;
       case 3:
         word = 'bugs';
-        s += count + ' little ' + word + ' in the code.<br>';
+        s += count + ' little ' + word + ' for me.';
         break;
       case 4:
+        s += ' Oh no!<br>';
+        break;
+      case 5:
         s = '';
     }
-    lineNum = (lineNum + 1) % 5;
+    lineNum = (lineNum + 1) % 6;
     canvas.innerHTML = s;
   }
 }
