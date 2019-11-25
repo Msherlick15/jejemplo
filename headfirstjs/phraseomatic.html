@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Phrase-O-Matic</title>
+<style>
+@import url(../mystyle.css);
+p#phrase {
+    font-size: 2em;
+}
+</style>
+<script>
+function makePhrase() {
+  var wordList1 = ["24/7", "multi-tier", "30,000 foot", "B-to-B",
+                   "win-win", "front-end", "web-based", "pervasive",
+                   "smart", "six-sigma", "critical-path", "dynamic"];
+
+  var wordList2 = ["empowered", "sticky", "value-added", "oriented",
+                   "centric", "distributed", "clustered", "branded",
+                   "outside-the-box", "positioned", "networked", "focused",
+                   "leveraged", "aligned", "targeted", "shared",
+                   "cooperative", "accelerated"];
+
+  var wordList3 = ["process", "tipping-point", "solution", "architecture",
+                   "core competency", "strategy", "mindshare", "portal",
+                   "space", "vision", "paradigm", "mission"];
+
+  var canvas = document.getElementById("phrase");
+
+  var word1 = wordList1[Math.floor(Math.random() * wordList1.length)];
+  var word2 = wordList2[Math.floor(Math.random() * wordList2.length)];
+  var word3 = wordList3[Math.floor(Math.random() * wordList3.length)];
+  var message = word1 + " " + word2 + " " + word3;
+
+  var phrase = "What we need is a " + message + "!";
+
+  canvas.innerHTML = phrase;
+}
+</script>
+
+</head>
+<body>
+<header>
+<h1>Phrase-O-Matic</h1>
+</header>
+
+<main>
+<p id="phrase">
+</p>
+</main>
+<button type="button" onclick="makePhrase()">We need...</button>
+
+<footer><a
+href="http://validator.w3.org/check?uri=https://jelkner.github.io/jejemplo/headfirstjs/phraseomatic.html">
+<strong> HTML </strong> Valid! </a> | <a
+href="http://jigsaw.w3.org/css-validator/validator?uri=https://jelkner.github.io/jejemplo/headfirstjs/phraseomatic.html?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
