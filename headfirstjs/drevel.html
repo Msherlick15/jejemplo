@@ -5,7 +5,31 @@
 <title>Dr. Evel's Secret Code Page</title>
 <style>
 @import url(../mystyle.css);
+li {
+    margin-top: 10px;
+}
+main {
+    display: grid;
+    grid-template-columns: 48vw 48vw;
+    grid-templage-rows: auto;
+    grid-gap: 1vw;
+}
+main > h2 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+main > ol {
+    grid-area: 2 / 1 / 3 / 2;
+}
+main > form {
+    grid-area: 2 / 2 / 3 / 3;
+}
 </style>
+<script>
+function showSecret() {
+    var access = document.getElementById("code9");
+    var code = access.innerHTML + " midnight";
+}
+</script>
 </head>
 <body>
 <header>
@@ -13,31 +37,34 @@
 </header>
 
 <main>
-<p id="code1">The eagle is in the</p>
-<p id="code2">The fox is in the</p>
-<p id="code3">snuck into the garden last night.</p>
-<p id="code4">They said it would rain</p>
-<p id="code5">Does the red robin crow at</p>
-<p id="code6">Where can I find Mr.</p>
-<p id="code7">I told the boys to bring tea and</p>
-<p id="code8">Where's my dough? The cake won't</p>
-<p id="code9">My watch stopped at</p>
-<p id="codeA">barking, can't fly without umbrella.</p>
-<p id="codeB">The green canary flies at</p>
-<p id="codeC">The oyster owns a fine</p>
+<h2>Code Phrases</h2>
+<ol>
+  <li id="code1">The eagle is in the</li>
+  <li id="code2">The fox is in the</li>
+  <li id="code3">snuck into the garden last night.</li>
+  <li id="code4">They said it would rain</li>
+  <li id="code5">Does the red robin crow at</li>
+  <li id="code6">Where can I find Mr.</li>
+  <li id="code7">I told the boys to bring tea and</li>
+  <li id="code8">Where's my dough? The cake won't</li>
+  <li id="code9">My watch stopped at</li>
+  <li id="codeA">barking, can't fly without umbrella.</li>
+  <li id="codeB">The green canary flies at</li>
+  <li id="codeC">The oyster owns a fine</li>
+</ol>
+
+<form method="GET" action="showSecret()">
+<label>Code Number: <input type="text" name="codenum" size="10"></label>
+<button type="submit">Click to reveal code</button>
+</form>
 </main>
 
 <footer>
 <a href="http://validator.w3.org/check/referer">
-<strong> HTML </strong> Valid! </a>  
+<strong> HTML </strong> Valid! </a> |
 <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
 <strong> CSS </strong> Valid! </a>
 </footer>
 
-<script>
-var access = document.getElementById("code9");
-var code = access.innerHTML + " midnight";
-alert(code);
-</script>
 </body>
 </html>
