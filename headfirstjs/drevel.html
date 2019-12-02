@@ -26,8 +26,10 @@ main > form {
 </style>
 <script>
 function showSecret() {
-    var access = document.getElementById("code9");
-    var code = access.innerHTML + " midnight";
+  var access = document.getElementById("code9");
+  var code = access.innerHTML + " midnight";
+
+  access.innerHTML = "Say cheese!";
 }
 </script>
 </head>
@@ -53,8 +55,8 @@ function showSecret() {
   <li id="codeC">The oyster owns a fine</li>
 </ol>
 
-<form method="GET" action="showSecret()">
-<label>Code Number: <input type="text" name="codenum" size="10"></label>
+<form onsubmit="showSecret()">
+<label>Code Number: <input type="text" id="codenum" size="3"></label>
 <button type="submit">Click to reveal code</button>
 </form>
 </main>
