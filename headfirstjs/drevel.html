@@ -11,7 +11,7 @@ li {
 main {
     display: grid;
     grid-template-columns: 48vw 48vw;
-    grid-templage-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 1vw;
 }
 main > h2 {
@@ -25,11 +25,9 @@ main > form {
 }
 </style>
 <script>
-function showSecret() {
-  var access = document.getElementById("code9");
-  var code = access.innerHTML + " midnight";
-
-  access.innerHTML = "Say cheese!";
+function showSecret(codenum) {
+  var elem = document.getElementById(codenum);
+  elem.innerHTML += " midnight.";
 }
 </script>
 </head>
@@ -57,7 +55,8 @@ function showSecret() {
 
 <form>
 <label>Code Number: <input type="text" id="codenum" size="3"></label>
-<button type="button" onclick="showSecret()">Click to reveal code</button>
+<button type="button" onclick="showSecret('code9')">
+Click to reveal code</button>
 </form>
 </main>
 
