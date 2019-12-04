@@ -20,26 +20,40 @@ header {
     color: #53AF13;
 }
 main > p {
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 2 / 2 / 3;
 }
 main > table {
     table-layout: fixed;
     grid-area: 2 / 1 / 3 / 3;
-    height: 67vw;
+    height: 60vw;
     background-image: url(images/board.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 main > form {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 1vw;
+    text-align: center;
+}
+main > form > input {
+    background-color: #98CF71;
+    border-color: #53AF13;
+    font-size: 24px;
+    width: 36px;
+    padding: 3px;
+}
+main > form > button {
+    font-size: 22px;
 }
 footer {
     text-align: center;
     padding: 2vw;
+    font-size: 22px;
 }
 footer > a, footer a:visited {
     color: #53AF13;
+    text-decoration: none;
 }
 </style>
 </head>
@@ -117,8 +131,8 @@ footer > a, footer a:visited {
 </table>
 
 <form>
-<input type="text" id="guessInput" placeholder="A0">
 <button type="button" id="fireButton">Fire!</button>
+<input type="text" id="guessInput" placeholder="A0">
 </form>
 </main>
 
