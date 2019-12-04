@@ -7,12 +7,31 @@
 body {
     background-color: #000;
 }
-table {
-    position: relative;
-    width: 80vw;
-    height: 67vw; 
-    margin-left: 20vw;
-    background: url(images/board.jpg) no-repeat;
+main {
+    display: grid;
+    grid-template-columns: 9vw 80vw 9vw;
+    grid-templage-rows: 67vw auto;
+}
+header {
+    background-color: yellow;
+    text-align: center;
+}
+main > table {
+    table-layout: fixed;
+    grid-area: 1 / 2 / 2 / 3;
+    height: 67vw;
+    background-image: url(images/board.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main > form {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: purple;
+}
+footer {
+    background-color: red;
+    text-align: center;
 }
 </style>
 </head>
@@ -89,12 +108,13 @@ table {
 </table>
 
 <form>
+ &nbsp;
 </form>
 </main>
 
 <footer>
 <a href="http://validator.w3.org/check/referer">
-<strong> HTML </strong> Valid! </a>  
+<strong> HTML </strong> Valid! </a> |
 <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
 <strong> CSS </strong> Valid! </a>
 </footer>
