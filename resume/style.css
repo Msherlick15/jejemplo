@@ -319,16 +319,20 @@ li{
 
 /* sidebar */
 
-#sidebar h1{
+#sidebar h1 {
   font-weight: 400;
   font-size: 11pt;
 }
 
-.side-block{
+.side-block {
   margin-top: 0.5in; 
 }
+.side-block > a, .side-block > a:visited {
+    text-decoration: none;
+    color: #000;
+}
 
-#contact ul{
+#contact ul {
   margin-top: 0.05in;
   padding-left: 0;
   font-family: "Source Code Pro";
