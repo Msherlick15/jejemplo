@@ -302,8 +302,6 @@ li{
 
 .details .concise ul{
   margin: 0 !important;
-  -webkit-columns: 2;
-  -moz-columns: 2;
   columns: 2;
 }
 
