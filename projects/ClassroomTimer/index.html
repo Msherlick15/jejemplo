@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Timer</title>
+<style>
+body {
+    background: #C41E38;
+    padding: 0px;
+    border:0px;
+    margin: 0px;
+}
+img {
+    float: right;
+    height: 1000vw;
+    width: 1000vw;
+}
+@keyframes timer {
+    0% {
+        right: 0vw;
+        top: 0px
+    }
+    50% {
+        right: 50%;
+        top: 0px
+    }
+    100% {
+        right: 100%;
+        top: 0px
+    }
+}
+#animation {
+    position: relative;
+    animation-name: timer;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+</style>
+</head>
+
+<body>
+<img id="animation" src="greenscreen.jpg" alt="timer">
+</body>
+</html>
